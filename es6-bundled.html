@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Polymer 2 Bundled HTML Import - ES6</title>
+    <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+    <link rel="import" href="polymer.html" />
+    <script>
+      window.addEventListener('WebComponentsReady', () => {
+        class DemoElement extends Polymer.Element {
+          static get is() { return 'demo-element'; }
+        }
+        customElements.define(DemoElement.is, DemoElement);
+      });
+    </script>
+  </head>
+  <body>
+    <demo-element></demo-element>
+    <dom-module id="demo-element">
+      <template>
+        <p>Hello World</p>
+      </template>
+    </dom-module>
+  </body>
+</html>

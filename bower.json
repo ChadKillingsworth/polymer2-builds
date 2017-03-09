@@ -1,0 +1,14 @@
+{
+  "name": "polymer2-builds",
+  "description": "Demoing building polymer standalone",
+  "main": "index.js",
+  "authors": [
+    "Chad Killingsworth <chadkillingsworth@gmail.com>"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/chadkillingsworth/polymer-builds#readme",
+  "private": true,
+  "dependencies": {
+    "polymer": "2.0.0-rc.2"
+  }
+}
